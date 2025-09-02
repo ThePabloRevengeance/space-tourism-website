@@ -18,8 +18,20 @@ html {
     box-sizing: inherit;
 }
 
-body {
+.body_home {
     background-image: url(../assets/home/background-home-desktop.jpg);
+}
+.body_destination {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+}
+.body_crew {
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+}
+.body_technology {
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+}
+
+body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
@@ -77,9 +89,17 @@ body {
 .menu-text:hover:not(.menu-text--active)::after{
     
     /*border-bottom: 10px solid;*/
-    text-underline-offset: 40px;
+    /*text-underline-offset: 40px;*/
     transform: scaleX(1);
     background-color: var(--color-a);
+}
+
+.menu-text_destination{
+    text-underline-offset: 15px;
+}
+
+.menu-text_destination:after{
+    bottom: -15px;        
 }
 
 .menu{
@@ -107,6 +127,18 @@ body {
 
 .margin-1{
     margin: 1rem 1rem 1rem 0;
+}
+
+.margin-0{
+    margin: 0;
+}
+
+.color-blue-900{
+    color: var(--blue-900);
+}
+
+.text-center {
+    text-align:start;
 }
 
 .explore{
@@ -153,7 +185,146 @@ body {
     z-index: 2;
 }
 
+.destination{
+    padding-left: 11rem;
+}
 
+.destination-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.destination-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    flex: 0 0 50%;
+}
+
+.destination-menu{
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-right: 200px;
+    flex: 0 0 50%;
+    justify-content: space-around;
+}
+
+.destination-menu hr{
+    /*margin: 32px 0;*/
+    border: none;
+    height: 1px;  
+    background: var(--color-a);
+}
+
+.destination-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.destination-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.crew{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 6rem 0 11rem;
+}
+
+.crew-details{
+    grid-row: 2;
+}
+
+.crew-image{
+    grid-row: 2;
+    justify-content: center;
+    padding-left: 6rem;
+}
+
+.crew-nav{
+    display: flex;
+    justify-content: space-between;
+    grid-row: 3;
+    padding-right: 70%;
+}
+
+.menu-text_crew{
+    background-color: var(--color-b);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.menu-text_crew:hover{
+    background-color: var(--color-a);
+}
+
+.menu-text_crew--active{
+    background-color: var(--white);
+}
+
+#commander{
+    color: var(--color-a);
+}
+
+.technology {
+    padding-left: 11rem;
+}
+
+.technology-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technology-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.technology-details {
+    width: 35%;
+}
+
+.technology-image {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.technology_btn {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    font-size: 37px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 75px;
+}
+
+.technology_btn--active {
+    background-color: var(--white);
+    color: var(--blue-900);
+    font-weight: bold;
+}
 
 .text-preset1 {
     font-family: 'Bellefair', sans-serif;
@@ -170,6 +341,7 @@ body {
     font-size: 100px;
     line-height: normal 114.6%;
     letter-spacing: 0px;
+    color: var(--white);
 }
 
 .text-preset3 {
@@ -178,6 +350,7 @@ body {
     font-size: 56px;
     line-height: normal 64.2%;
     letter-spacing: 0px;
+    color: var(--white);
 }
 
 .text-preset4 {
@@ -204,6 +377,8 @@ body {
     font-size: 28px;
     line-height: normal 32.1%;
     letter-spacing: 0px;
+
+    color: var(--white);
 }
 
 .text-preset7 {
@@ -212,6 +387,8 @@ body {
     font-size: 14px;
     line-height: normal 16.8%;
     letter-spacing: 2px;
+
+    color:var(--blue-300)
 }
 
 .text-preset8 {

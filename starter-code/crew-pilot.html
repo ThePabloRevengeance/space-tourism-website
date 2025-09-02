@@ -4,25 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+ <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style/App.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="body_crew">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Pilot
-  Victor Glover
-
-  Pilot on the first operational flight of the SpaceX Crew Dragon to the 
-  International Space Station. Glover is a commander in the U.S. Navy where 
-  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
-  station systems flight engineer. 
+ <header class="header">
+    <button class="menu-btn">
+      <a href="index.html">
+        <img src="assets/shared/logo.svg" class="none">
+      </a>
+      <hr>
+    </button>
+    
+    <nav class="menu text-preset8" >
+        <a href="index.html" class="menu-text"><b>00</b> HOME</a>
+        <a href="destination-moon.html" class="menu-text"><b>01</b> DESTINATION</a>
+        <a href="crew-commander.html" class="menu-text  menu-text--active"><b>02</b> CREW</a>
+        <a href="technology-vehicle.html" class="menu-text"><b>03</b> TECHNOLOGY</a>
+    </nav>
+  </header>
+  <main class="crew">
+    <p class="text-preset5"> <span style="color: gray">02</span> MEET YOUR CREW</p>
+    <article class="crew-details text-preset8">
+      <p class="text-preset4" id="commander">PILOT</p>
+      <p class="text-preset3 margin-1">VICTOR GLOVER</p>
+      <p class="text-preset9">
+        Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where 
+        he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. 
+      </p>
+    </article>
+    <article class="crew-image">
+       <img src="./assets/crew/image-victor-glover.png" alt="Pilot">
+    </article>
+    <nav class="crew-nav">  
+      <a href="crew-commander.html" class="menu-text_crew"></a>
+      <a href="crew-specialist.html" class="menu-text_crew"></a>
+      <a href="crew-pilot.html" class="menu-text_crew--active menu-text_crew"></a>
+      <a href="crew-engineer.html" class="menu-text_crew"></a>
+    </nav>
+  </main>
 </body>
 </html>
