@@ -18,7 +18,7 @@
   <header class="header">
     <button class="menu-btn">
       <a href="index.html">
-        <img src="assets/shared/logo.svg" class="none">
+        <img src="assets/shared/logo.svg">
       </a>
       <hr>
     </button>
@@ -29,9 +29,14 @@
         <a href="crew-commander.html" class="menu-text  menu-text--active"><b>02</b> CREW</a>
         <a href="technology-vehicle.html" class="menu-text"><b>03</b> TECHNOLOGY</a>
     </nav>
+    <button class="hamburguer-btn none">
+        <img src="assets/shared/icon-hamburger.svg" >
+        <img src="assets/shared/icon-close.svg" class="none">
+    </button>
   </header>
+
+  <p id="title" class="text-preset5 padding-left-40"> <span style="color: gray">02</span> MEET YOUR CREW</p>
   <main class="crew">
-    <p class="text-preset5"> <span style="color: gray">02</span> MEET YOUR CREW</p>
     <article class="crew-details text-preset8">
       <p class="text-preset4" id="commander">MISSION SPECIALIST</p>
       <p class="text-preset3 margin-1">MARK SHUTTLEWORTH</p>
@@ -41,15 +46,14 @@
         African to travel to space as a space tourist.
       </p>
     </article>
-    <article class="crew-image">
-       <img src="./assets/crew/image-mark-shuttleworth.png" alt="Specialist">
-    </article>
     <nav class="crew-nav">  
       <a href="crew-commander.html" class="menu-text_crew"></a>
       <a href="crew-specialist.html" class="menu-text_crew--active menu-text_crew"></a>
       <a href="crew-pilot.html" class="menu-text_crew"></a>
       <a href="crew-engineer.html" class="menu-text_crew"></a>
     </nav>
+    <img src="./assets/crew/image-mark-shuttleworth.png"  class="crew-image" alt="Specialist">
   </main>  
+  <script src="js/script.js"></script>
 </body>
 </html>

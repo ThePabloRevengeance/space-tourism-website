@@ -17,7 +17,7 @@
   <header class="header">
     <button class="menu-btn">
       <a href="index.html">
-        <img src="assets/shared/logo.svg" class="none">
+        <img src="assets/shared/logo.svg">
       </a>
       <hr>
     </button>
@@ -27,9 +27,13 @@
         <a href="crew-commander.html" class="menu-text"><b>02</b> CREW</a>
         <a href="technology-vehicle.html" class="menu-text  menu-text--active"><b>03</b> TECHNOLOGY</a>
     </nav>
+    <button class="hamburguer-btn none">
+        <img src="assets/shared/icon-hamburger.svg" >
+        <img src="assets/shared/icon-close.svg" class="none">
+    </button>
   </header>
   <main class="technology">
-     <p class="text-preset5"> <span style="color: gray">03</span> SPACE LAUNCH 101</p>
+     <p id="title" class="text-preset5 padding-left-40"> <span style="color: gray">03</span> SPACE LAUNCH 101</p>
     <div class="technology-container">
       <nav class="technology-nav">
       <a href="technology-vehicle.html" class="technology_btn">1</a>
@@ -46,10 +50,9 @@
           and plenty of other activities to keep you entertained.
       </p>
       </article>
-      <article class="technology-image">
-        <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="Vehicle">
-      </article>
+      <img src="./assets/technology/image-space-capsule-portrait.jpg" class="technology-image" alt="Vehicle">
     </div>
   </main>
+  <script src="js/script.js"></script>
 </body>
 </html>
